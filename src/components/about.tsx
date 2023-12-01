@@ -20,10 +20,14 @@ export default function About() {
             About me
         </SectionHeading>
         <p className='mb-3'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quae repudiandae vitae perspiciatis nisi cumque porro placeat itaque, quibusdam velit, ipsa ex aut, veniam at provident corporis ea totam fugiat.
+            I&apos;m a <span className='font-medium'>mathematics</span> fresh graduate from <span className='font-medium'>Gadjah Mada University</span>. After graduating with a degree in <span className='font-medium'>Mathematics</span>, I decided to purse my passion for programming. To pursue my passion, I enrolled in a coding and learned{' '} <span className='font-medium'>back-end development</span> and {' '} <span className='font-medium'>cloud computing</span>. The thing that I <span className='underline'>love</span> so much about programming is the problem-solving part. It feels really good when I finally found a solution to a problem. My core stack is <span className='font-medium'>Node.js, Express.js, MySQL</span>. I&apos;m also familiar with TypeScript and MongoDB. I&apos;m open to a new challenge and eager to learn new technologies. I am currently looking for a{' '} <span className='font-medium'>full-time position</span> as a software developer.
         </p>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quos, exercitationem illum ipsum quasi laudantium aliquid soluta ipsam deserunt, beatae quod voluptates sunt facilis cum sequi accusamus, dolor aut corporis.
+          <span className="italic">When I&apos;m not doing coding</span>, I enjoy playing
+          video games, watching movies, and writing with my fountain pen. I also enjoy{" "}
+          <span className="font-medium">learning new things</span>. I am currently
+          learning{" "}
+          <span className="font-medium">spanish</span>.
         </p>
     </motion.section>
   )
