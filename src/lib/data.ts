@@ -3,7 +3,7 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import KalorizeBangkit from "@/../public/KalorizeBangkit.png";
-import rmtdevImg from "@/../public/rmtdev.png";
+import TeslaCalculator from "@/../public/TeslaCalculator.png";
 import wordanalyticsImg from "@/../public/wordanalytics.png";
 
 export const links = [
@@ -69,6 +69,14 @@ export const projectsData = [
     imageUrl: KalorizeBangkit,
     projectUrl: 'https://github.com/Kalorize/kalorize-be'
   },
+  {
+    title: "Tesla Calculator",
+    description:
+      "A Tesla car calculator. Made using react from educative course",
+    tags: ["React", "JavaScript", "HTML", "CSS"],
+    imageUrl: TeslaCalculator,
+    projectUrl: 'https://tesla-calculator.surge.sh/'
+  }
   // {
   //   title: "rmtDev",
   //   description:
