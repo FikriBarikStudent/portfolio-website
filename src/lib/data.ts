@@ -35,20 +35,20 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated Bangkit Academy 2023",
-    location: "Yogyakarta, Indonesia",
-    description:
-      "I graduated from Bangkit after 6 month studying cloud computing. I also got the Associate Cloud Engineer Certificate issued by Google Cloud.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2023",
-  },
-  {
     title: "Gadjah Mada University",
     location: "Yogyakarta, Indonesia",
     description:
       "I studied mathematics major focusing on computational mathematics. During my study, I learned C++, Java, Python and Node.js.",
     icon: React.createElement(LuGraduationCap),
     date: "2019 - 2023",
+  },
+  {
+    title: "Graduated Bangkit Academy 2023",
+    location: "Yogyakarta, Indonesia",
+    description:
+      "I graduated from Bangkit after 6 month studying cloud computing. I also got the Associate Cloud Engineer Certificate issued by Google Cloud.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2023",
   },
   {
     title: "Back-End Developer",
@@ -67,6 +67,7 @@ export const projectsData = [
       "I worked as a back-end developer for this capstone project around one month. I also worked on GCP infrastructure for this project",
     tags: ["GCP", "Express.js", "Flask", "MySQL", "Cloud Run"],
     imageUrl: KalorizeBangkit,
+    projectUrl: 'https://github.com/Kalorize/kalorize-be'
   },
   // {
   //   title: "rmtDev",
