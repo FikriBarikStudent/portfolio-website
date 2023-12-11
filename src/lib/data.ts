@@ -64,7 +64,7 @@ export const projectsData = [
   {
     title: "Kalorize",
     description:
-      "I worked as a back-end developer for this capstone project around one month. I also worked on GCP infrastructure for this project",
+      "I worked as a back-end developer for this capstone project around one month on GCP infrastructure.",
     tags: ["GCP", "Express.js", "Flask", "MySQL", "Cloud Run"],
     imageUrl: KalorizeBangkit,
     projectRepoUrl: 'https://github.com/Kalorize/kalorize-be',
