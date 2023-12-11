@@ -4,7 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import KalorizeBangkit from "@/../public/KalorizeBangkit.png";
 import TeslaCalculator from "@/../public/TeslaCalculator.png";
-import wordanalyticsImg from "@/../public/wordanalytics.png";
+import ThreadsClone from "@/../public/ThreadsClone.png";
 
 export const links = [
   {
@@ -67,7 +67,8 @@ export const projectsData = [
       "I worked as a back-end developer for this capstone project around one month. I also worked on GCP infrastructure for this project",
     tags: ["GCP", "Express.js", "Flask", "MySQL", "Cloud Run"],
     imageUrl: KalorizeBangkit,
-    projectUrl: 'https://github.com/Kalorize/kalorize-be'
+    projectRepoUrl: 'https://github.com/Kalorize/kalorize-be',
+    projectUrl: ''
   },
   {
     title: "Tesla Calculator",
@@ -75,7 +76,17 @@ export const projectsData = [
       "A Tesla car calculator. Made using react from educative course",
     tags: ["React", "JavaScript", "HTML", "CSS"],
     imageUrl: TeslaCalculator,
+    projectRepoUrl: 'https://github.com/FikriBarikStudent/tesla-calculator-project',
     projectUrl: 'https://tesla-calculator.surge.sh/'
+  },
+  {
+    title: "Tesla Calculator",
+    description:
+      "A clone of threads app. Made using NextJs and Clerk for authentication",
+    tags: ["NextJs", "React", "TypeScript", "JavaScript", "Clerk", "MongoDb", "HTML", "CSS"],
+    imageUrl: ThreadsClone,
+    projectRepoUrl: 'https://github.com/FikriBarikStudent/threads-clone',
+    projectUrl: 'https://threads-clone-bariks-projects.vercel.app/'
   }
   // {
   //   title: "rmtDev",

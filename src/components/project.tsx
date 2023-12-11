@@ -4,6 +4,7 @@ import React, { useRef } from 'react'
 import Image from 'next/image'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { projectsData } from '@/lib/data'
+import { FaGithubSquare } from 'react-icons/fa';
 
 type ProjectProps = typeof projectsData[number]
 
@@ -12,6 +13,7 @@ export default function Project({
     description,
     tags,
     imageUrl,
+    projectRepoUrl,
     projectUrl
 }: ProjectProps) {
     const ref = useRef<HTMLDivElement>(null)
@@ -31,10 +33,15 @@ export default function Project({
     className='group mb-3 sm:mb-8 last:mb-0' >
         <article 
         className='bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden pr-8 relative sm:h-[20rem] sm:group-even:pl-8 hover:bg-gray-200 transition rounded-lg dark:bg-white/10 dark:hover:bg-white/20 dark:text-white'>
-            <a href={projectUrl} target="_blank" rel="noopener noreferrer">
             <div className='pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]'>
                 <h3 className='text-2xl font-semibold'>{title}</h3>
-                <p className='mt-2 leading-relaxed tect-gray-700 dark:text-white/70'>{description}</p>
+                <p className='mt-2 leading-relaxed text-gray-700 dark:text-white/70'>{description}</p>
+                <div className='flex gap-4 my-2'>
+                    <a href={projectRepoUrl} target="_blank" rel="noopener noreferrer" className="bg-black/[0.8] p-4 text-white flex items-center  rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:text-white/70"><FaGithubSquare /></a>
+                    {projectUrl !== '' && (
+                        <a href={projectUrl} target="_blank" rel="noopener noreferrer" className='flex items-center bg-black/[0.8] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70 focus:scale-[1.15] hover:scale-[1.15] active:scale-105 '>Visit Web</a>
+                    )}
+                </div>
                 <ul className='flex flex-wrap mt-4 gap-2 sm:mt-auto'>
                     {tags.map((tag, index) => (
                         <li className='bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70' key={index}>{tag}</li>
@@ -53,7 +60,6 @@ export default function Project({
         group-even:group-hover:rotate-2
 
         group-even:right-[initial] group-even:-left-40'/>
-        </a>
         </article>
     </motion.div> 
 }
