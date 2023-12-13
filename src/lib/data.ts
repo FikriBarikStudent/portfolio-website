@@ -80,7 +80,7 @@ export const projectsData = [
     projectUrl: 'https://tesla-calculator.surge.sh/'
   },
   {
-    title: "Tesla Calculator",
+    title: "Threads Clone",
     description:
       "A clone of threads app. Made using NextJs and Clerk for authentication",
     tags: ["NextJs", "React", "TypeScript", "JavaScript", "Clerk", "MongoDb", "HTML", "CSS"],
